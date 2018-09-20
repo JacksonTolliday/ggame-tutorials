@@ -26,6 +26,7 @@ ball.go = True
 # reverse - change the ball direction
 
 def reverse(b):
+    pop.play()
     b.direction *= -1
 
 def step():
@@ -45,6 +46,7 @@ def reverseKey(event):
 
 # Handle the mouse click
 def mouseClick(event):
+    pew1.play()
     ball.x = event.x
     ball.y = event.y
 
@@ -52,5 +54,11 @@ def mouseClick(event):
 myapp.listenKeyEvent('keydown', 'space', spaceKey)
 myapp.listenKeyEvent('keydown', 'r', reverseKey)
 myapp.listenMouseEvent('click', mouseClick)
+
+# Sounds
+pew1_asset = SoundAsset("sounds/pew1.mp3")
+pew1 = Sound(pew1_asset)
+pop_asset = SoundAsset("sounds/reappear.mp3")
+pop = Sound(pop_asset)
 
 myapp.run(step)
