@@ -4,8 +4,8 @@ class SpaceShip(Sprite):
     """
     Animated space ship
     """
-    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png", 
-        Frame(227,0,65,125), 4, 'vertical')
+    asset = ImageAsset("images/four_spaceship_by_albertov_with_thrust.png",
+        Frame(227,0,65,125), 4, 'vertical')                                     # PROBLEMA CON ESA LINEA?
 
     def __init__(self, position):
         super().__init__(SpaceShip.asset, position)
