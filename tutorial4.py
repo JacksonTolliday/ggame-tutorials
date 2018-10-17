@@ -34,6 +34,11 @@ class SpaceGame(App):
         SpaceShip((200,50))             #] aaaaaa?!                                    ] aaaaaa?!
 
 
+    def step(self):
+        for ship in self.getSpritesbyClass(SpaceShip):
+            ship.step()
+
+
 myapp = SpaceGame()
 
 
