@@ -17,7 +17,7 @@ class SpaceShip(Sprite):
         self.x += self.vx
         self.y += self.vy
         self.rotation += self.vr
-            # manage thrust animation
+        # manage thrust animation
         if self.thrust == 1:
             self.setImage(self.thrustframe)
             self.thrustframe += 1
