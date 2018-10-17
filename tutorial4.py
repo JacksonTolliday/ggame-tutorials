@@ -14,7 +14,7 @@ class SpaceGame(App):
     """
     Tutorial4 space game example.
     """
-    def __init__(self):
+    def __init__(self):                                                 #like what even is __init__???
         super().__init__()                                                      #so yeah i don't get what I'm doing enough to know how to fix the problem
         # Background
         black = Color(0, 1)
