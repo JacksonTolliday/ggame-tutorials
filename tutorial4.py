@@ -32,7 +32,10 @@ class SpaceGame(App):
         SpaceShip((100,100))            #] aaaaaa?!                                    ] aaaaaa?!
         SpaceShip((150,150))            #] aaaaaa?!   what's happening? y u no ship?   ] aaaaaa?!
         SpaceShip((200,50))             #] aaaaaa?!                                    ] aaaaaa?!
-
+        self.thrust = 0
+        self.thrustframe = 1
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
 
     def step(self):
         for ship in self.getSpritesbyClass(SpaceShip):
