@@ -19,7 +19,7 @@ class SpaceGame(App):
         # Background
         black = Color(0, 1)
         noline = LineStyle(0, black)
-        bg_asset = RectangleAsset(self.width, self.height, noline, black)           #ok then
+        bg_asset = RectangleAsset(self.width, self.height, noline, black)           #ok then        I DID NOTHING WHY DOES IT WORK NOW?!
         bg = Sprite(bg_asset, (0,0))
         SpaceShip((100,100))            #] aaaaaa?!                                    ] aaaaaa?!
         SpaceShip((150,150))            #] aaaaaa?!   what's happening? y u no ship?   ] aaaaaa?!
