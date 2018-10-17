@@ -15,7 +15,7 @@ class SpaceGame(App):
     Tutorial4 space game example.
     """
     def __init__(self):
-        super().__init__()
+        super().__init__()                                                      #so yeah i don't get what I'm doing enough to know how to fix the problem
         # Background
         black = Color(0, 1)
         noline = LineStyle(0, black)
