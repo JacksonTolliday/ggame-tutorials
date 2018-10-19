@@ -12,7 +12,7 @@ class SpaceShip(Sprite):
         self.vx = 1
         self.vy = 1
         self.vr = 0.01
-        SpaceGame.listenKeyEvent("ke ydown", "space", self.thrustOn)
+        SpaceGame.listenKeyEvent("keydown", "space", self.thrustOn)
         SpaceGame.listenKeyEvent("keyup", "space", self.thrustOff)
         self.fxcenter = self.fycenter = 0.5
 
@@ -47,9 +47,9 @@ class SpaceGame(App):
         noline = LineStyle(0, black)
         bg_asset = RectangleAsset(self.width, self.height, noline, black)
         bg = Sprite(bg_asset, (0,0))
-        SpaceShip((100,100))
-        SpaceShip((150,150))
-        SpaceShip((200,50))
+        SpaceShip((200,200))
+        SpaceShip((250,250))
+        SpaceShip((300,150))
         self.thrust = 0
         self.thrustframe = 1
 
