@@ -17,6 +17,7 @@ class SpaceShip(Sprite):
         self.fxcenter = self.fycenter = 0.5
 
     def step(self):
+        print('step')
         self.x += self.vx
         self.y += self.vy
         self.rotation += self.vr
