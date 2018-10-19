@@ -22,8 +22,8 @@ class SpaceShip(Sprite):
         
 
     def step(self):
-        '''self.x += self.vx
-        self.y += self.vy'''
+        '''self.x += self.vx'''
+        self.y += self.thrust
         self.rotation += self.vr
         # manage thrust animation
         if self.thrust == 1:
