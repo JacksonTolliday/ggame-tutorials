@@ -55,6 +55,7 @@ class SpaceGame(App):
 
 
     def step(self):
+        print('hi')
         for ship in self.getSpritesbyClass(SpaceShip):
             ship.step()
 
