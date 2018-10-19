@@ -60,6 +60,4 @@ class SpaceGame(App):
 
 
 myapp = SpaceGame()
-
-
 myapp.run()
