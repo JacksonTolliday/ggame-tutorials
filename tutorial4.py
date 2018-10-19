@@ -22,12 +22,12 @@ class SpaceShip(Sprite):
         self.rotation += self.vr
         # manage thrust animation
         if self.thrust == 1:
+            print('step')
             self.setImage(self.thrustframe)
             self.thrustframe += 1
             if self.thrustframe == 4:
                 self.thrustframe = 1
         else:
-            print('step')
             self.setImage(0)
 
 
