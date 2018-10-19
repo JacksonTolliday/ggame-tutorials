@@ -23,7 +23,7 @@ class SpaceShip(Sprite):
 
     def step(self):
         '''self.x += self.vx'''
-        self.y += self.thrust
+        self.y += -self.thrust
         self.rotation += self.vr
         # manage thrust animation
         if self.thrust == 1:
@@ -45,7 +45,7 @@ class SpaceShip(Sprite):
         self.thrust = 1
         
     def thrustOff(self, event):
-        self.thrust = 0
+        self.thrust = -1
 
 
 class SpaceGame(App):
